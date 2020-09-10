@@ -77,7 +77,7 @@ sortByObjectProperty([{name:'Liz'},{name:'Becky'}],'name') // => [{name:'Becky'}
 |[{name:'Liz'}],'name'|[{name:'Liz'}]|
 |[{name:'Liz'},{name:'Becky'}],'name'|[{name:'Becky'},{name:'Liz'}]|
 |[{id: 143, name:'Becky'},{id: 123, name:'Liz'}],'id'|[{id: 123, name:'Liz'},{id: 143, name:'Becky'}]|
-|[],'name'|'property name does not exist'|
+|[],'name'|[]|
 |[{name:'Liz'}],'id'|'property name does not exist'|
 
 
