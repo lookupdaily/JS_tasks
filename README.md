@@ -47,6 +47,7 @@ reverseNumber(32243) // => 34223
 Write a JavaScript program to get the length of a JavaScript object
 
 how it might look:
+
 ```javascript
 getObjectLength({}) // => 0
 ```
@@ -58,6 +59,31 @@ getObjectLength({}) // => 0
 |{}|0|
 |{name:'Liz'}|1 |
 |{name : “test”,class : "VI",rollno : 12 }|3|
+
+## Task 4 
+
+Write a JavaScript program to sort an array of JavaScript objects.
+
+how it might look: 
+
+```javascript
+sortByObjectProperty([{name:'Liz'},{name:'Becky'}],'name') // => [{name:'Becky'},{name:'Liz'}]
+```
+
+### Test cases
+
+| Input | Output |
+|-------|--------|
+|[{name:'Liz'}],'name'|[{name:'Liz'}]|
+|[{name:'Liz'},{name:'Becky'}],'name'|[{name:'Becky'},{name:'Liz'}]|
+|[{id: 143, name:'Becky'},{id: 123, name:'Liz'}],'id'|[{id: 123, name:'Liz'},{id: 143, name:'Becky'}]|
+|[],'name'|'property name does not exist'|
+|[{name:'Liz'}],'id'|'property name does not exist'|
+
+
+
+
+
 
 
 
