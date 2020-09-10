@@ -8,4 +8,8 @@ describe('countCharacter', () => {
     it('returns 0 if no matching character', () => {
         expect(countCharacter('a','b')).toEqual(0);
     })
+
+    it('returns 1 if only one letter matching in longer string', () => {
+        expect(countCharacter('ab','a')).toEqual(1);
+    })
 })

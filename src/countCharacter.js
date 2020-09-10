@@ -1,8 +1,12 @@
 function countCharacter(string, character) {
-    if(string === character) {
-        return 1;
+    var characters = string.split('')
+    var output = 0
+    for (var i = 0; i < characters.length; i++) {
+        if(characters[i] === character) {
+            output = 1;
+        }
     }
-    return 0;
+    return output;
 }
 
 module.exports = countCharacter
