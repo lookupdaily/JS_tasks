@@ -25,7 +25,7 @@ describe('countCharacter', () => {
         expect(countCharacter('','a')).toEqual(0);
     })
 
-    it('throws error if no character provided', () => {
+    it('show error if no character provided', () => {
         expect(countCharacter('q','')).toEqual('no character provided');
     })
 })
