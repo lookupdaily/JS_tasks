@@ -3,7 +3,7 @@ var sortByObjectProperty = require('../src/sortByObjectProperty');
 describe('sortByObjectProperty', () => {
   it('returns the same for an array of one object', () => {
     var input = [{ name: 'Liz' }];
-    expect(sortByObjectProperty(array, 'name')).toEqual(array);
+    expect(sortByObjectProperty(input, 'name')).toEqual(input);
   });
 
   it('sorts an array of two objects with one property', () => {
@@ -25,7 +25,9 @@ describe('sortByObjectProperty', () => {
   });
 
   it('shows error message if property does not exist', () => {
-
-  })
+    var input = [{ name: 'Liz' }];
+    expect(sortByObjectProperty(input, 'id')).toEqual(
+      'property name does not exist'
+    );
+  });
 });
-
