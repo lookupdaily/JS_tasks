@@ -24,3 +24,19 @@ countCharacter('test','t') // => 2
 |'a','b'|0|
 |'','a'|0|
 
+## Task 2
+
+Write a JavaScript function that reverses a number
+
+how it might look:
+```javascript
+reverseNumber(32243) // => 34223
+```
+
+### Test cases
+| Input | Output |
+|-------|--------|
+|1|1|
+|12|21|
+|123|321|
+|'1234'|'4321'|
