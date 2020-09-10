@@ -1,5 +1,8 @@
 function countCharacter(string, character) {
-    return 1;
+    if(string === character) {
+        return 1;
+    }
+    return 0;
 }
 
 module.exports = countCharacter
