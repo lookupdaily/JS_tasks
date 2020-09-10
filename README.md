@@ -80,7 +80,19 @@ sortByObjectProperty([{name:'Liz'},{name:'Becky'}],'name') // => [{name:'Becky'}
 |[],'name'|[]|
 |[{name:'Liz'}],'id'|'property name does not exist'|
 
+## Task 5
 
+Write a JavaScript function to retrieve all the names of object's own and inherited properties.
+
+how it might look:
+
+```javascript
+getAllProperties( {
+       title:  'The Road Ahead',
+       author: 'Bill Gates',
+       libraryID: 1254
+   }) // => [title, author, libraryID]
+```
 
 
 
