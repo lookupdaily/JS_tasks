@@ -1,9 +1,9 @@
 function getObjectLength(object) {
-  var properties = []
+  var noOfProperties = 0
   for (var property in object) {
-    properties.push(property)
+    noOfProperties += 1
   }
-    return properties.length;
+    return noOfProperties;
 }
 
 module.exports = getObjectLength;
