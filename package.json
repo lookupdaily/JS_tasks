@@ -1,0 +1,13 @@
+{
+  "name": "JS_1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Liz Daly <50752284+lookupdaily@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
