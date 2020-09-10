@@ -34,9 +34,31 @@ reverseNumber(32243) // => 34223
 ```
 
 ### Test cases
+
 | Input | Output |
 |-------|--------|
 |1|1|
 |12|21|
 |32243|34223|
 |'1234'| 'not a number'|
+
+## Task 3 
+
+Write a JavaScript program to get the length of a JavaScript object
+
+how it might look:
+```javascript
+getObjectLength({}) // => 0
+```
+
+### Test cases
+
+| Input | Output |
+|-------|--------|
+|{}|0|
+|{name:'Liz'}|1 |
+|{name : “test”,class : "VI",rollno : 12 }|3|
+
+
+
+
