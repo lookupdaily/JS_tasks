@@ -1,5 +1,11 @@
 function reverseNumber(number) {
-    return 1;
+    var digits = number.toString().split('');
+    for(var i=0; i < digits.length / 2; i++) {
+        var item = digits[i]
+        digits[i] = digits[digits.length - (i+1)]
+        digits[digits.length - (i+1)] = item
+    }
+    return parseInt(digits.join(''));
 }
 
 module.exports = reverseNumber;
