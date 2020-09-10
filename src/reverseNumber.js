@@ -1,4 +1,8 @@
 function reverseNumber(number) {
+    if (typeof number !== "number") {
+        return 'not a number'
+    }
+    
     var digits = number.toString().split('');
     for(var i=0; i < digits.length / 2; i++) {
         var item = digits[i]
