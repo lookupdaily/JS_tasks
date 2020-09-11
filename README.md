@@ -58,6 +58,7 @@ countCharacter('test','t') // => 2
 |'test it', 't'|3|
 |'a','b'|0|
 |'','a'|0|
+|'Test','t'|2|
 
 ## Task 2
 

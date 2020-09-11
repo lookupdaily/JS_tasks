@@ -1,6 +1,6 @@
 function countCharacter(string, character) {
   if (character) {
-    var characters = string.split('');
+    var characters = string.toLowerCase().split('');
     var output = 0;
     for (var i = 0; i < characters.length; i++) {
       if (characters[i] === character) {

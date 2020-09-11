@@ -28,4 +28,8 @@ describe('countCharacter', () => {
   it('show error if no character provided', () => {
     expect(countCharacter('q', '')).toEqual('no character provided');
   });
+
+  it('should work for capital letters in string', () => {
+    expect(countCharacter('Test', 't')).toEqual(2);
+  })
 });
