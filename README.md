@@ -16,6 +16,8 @@ You will see a list of available functions you can use. For example:
 > countCharacter('test','t') // => 2
 ```
 
+Functions can also be loaded independently in the REPL by loading the respective file in the 'src' directory.
+
 ## Running tests
 
 Tests are written in jest, which is installed using yarn package manager, and require [yarn to be installed](https://classic.yarnpkg.com/en/docs/install/) locally.
