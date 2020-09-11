@@ -3,6 +3,11 @@
 A series of exercises to test my understanding of vanilla JavaScript.   
 [Task 1](#Task-1) | [Task 2](#Task-2) | [Task 3](#Task-3) | [Task 4](#Task-4) | [Task 5](#Task-5)
 
+## Technologies
+
+- JavaScript (NodeJS)
+- Jest
+
 ## Getting started
 
 The solutions to the problems below are designed to be run in nodeJS and require [node to be installed](https://nodejs.org/en/download/) on your machine. 
@@ -23,7 +28,7 @@ Functions can also be loaded independently in the REPL by loading the respective
 
 ## Running tests
 
-Tests are written in jest, which is installed using yarn package manager, and require [yarn to be installed](https://classic.yarnpkg.com/en/docs/install/) locally.
+Tests are written in jest, and require [yarn to be installed](https://classic.yarnpkg.com/en/docs/install/) locally.
 
 To run the tests:
 
@@ -33,6 +38,7 @@ To run the tests:
 ```
 
 Tests will run in the command line.
+
 
 
 ## Task 1
@@ -60,6 +66,8 @@ countCharacter('test','t') // => 2
 |'','a'|0|
 |'Test','t'|2|
 
+
+
 ## Task 2
 
 Write a JavaScript function that reverses a number
@@ -78,6 +86,8 @@ reverseNumber(32243) // => 34223
 |32243|34223|
 |'1234'| 'not a number'|
 
+
+
 ## Task 3 
 
 Write a JavaScript program to get the length of a JavaScript object
@@ -94,7 +104,9 @@ getObjectLength({}) // => 0
 |-------|--------|
 |{}|0|
 |{name:'Liam'}|1 |
-|{name : “test”,class : "VI",rollno : 12 }|3|
+|{name : “test”,class : "VI",rollno : 12 }|3|  
+
+
 
 ## Task 4 
 
@@ -114,7 +126,9 @@ sortByObjectProperty([{name:'Liam'},{name:'Becky'}],'name') // => [{name:'Becky'
 |[{name:'Liam'},{name:'Becky'}],'name'|[{name:'Becky'},{name:'Liam'}]|
 |[{id: 143, name:'Becky'},{id: 123, name:'Liam'}],'id'|[{id: 123, name:'Liam'},{id: 143, name:'Becky'}]|
 |[],'name'|[]|
-|[{name:'Liam'}],'id'|'property name does not exist'|
+|[{name:'Liam'}],'id'|'property name does not exist'|   
+
+
 
 ## Task 5
 
