@@ -2,6 +2,34 @@
 
 ## Getting started
 
+The solutions to the problems below are designed to be run in nodeJS and require [node to be installed](https://nodejs.org/en/download/) on your machine. 
+
+You can the code in your command-line by loading index.js in the node REPL:
+
+```shell
+> node
+> .load index.js
+```
+
+You will see a list of available functions you can use. For example:
+```javascript
+> countCharacter('test','t') // => 2
+```
+
+## Running tests
+
+Tests are written in jest, which is installed using yarn package manager, and require [yarn to be installed](https://classic.yarnpkg.com/en/docs/install/) locally.
+
+To run the tests:
+
+```shell
+> yarn install
+> yarn jest
+```
+
+Tests will run in the command line.
+
+
 ## Task 1
 
 Write a JavaScript function to  get the number of occurrences of each letter in specified string
