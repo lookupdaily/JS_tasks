@@ -32,5 +32,17 @@ describe('getAllProperties', () => {
     var Parent = {};
     var child = Object.create(Parent);
     expect(getAllProperties(child)).toEqual([]);
-  })
+  });
+
+  it('works with constructors', () => {
+    var Parent = function () {
+      this.isObject = true;
+    };
+    var child = new Parent();
+    child.isChild = true;
+
+    expect(getAllProperties(child).sort()).toEqual(
+      ['isObject', 'isChild'].sort()
+    );
+  });
 });
