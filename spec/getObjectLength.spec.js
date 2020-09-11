@@ -7,7 +7,7 @@ describe('getObjectLength', () => {
   });
 
   it('returns 1 for an object with one property', () => {
-    var object = { name: 'Liz' };
+    var object = { name: 'Liam' };
     expect(getObjectLength(object)).toEqual(1);
   });
 

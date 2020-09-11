@@ -15,5 +15,5 @@ var getObjectLength = require('./src/getObjectLength');
 var reverseNumber = require('./src/reverseNumber');
 
 // [Function: sortByObjectProperty]
-// sortByObjectProperty(array: [{}], property: string): [{}] 
+// sortByObjectProperty(array: [{}], property: string): [{}]
 var sortByObjectProperty = require('./src/sortByObjectProperty');
