@@ -92,7 +92,7 @@ getObjectLength({}) // => 0
 | Input | Output |
 |-------|--------|
 |{}|0|
-|{name:'Liz'}|1 |
+|{name:'Liam'}|1 |
 |{name : “test”,class : "VI",rollno : 12 }|3|
 
 ## Task 4 
@@ -102,18 +102,18 @@ Write a JavaScript program to sort an array of JavaScript objects.
 how it might look: 
 
 ```javascript
-sortByObjectProperty([{name:'Liz'},{name:'Becky'}],'name') // => [{name:'Becky'},{name:'Liz'}]
+sortByObjectProperty([{name:'Liam'},{name:'Becky'}],'name') // => [{name:'Becky'},{name:'Liam'}]
 ```
 
 ### Test cases
 
 | Input | Output |
 |-------|--------|
-|[{name:'Liz'}],'name'|[{name:'Liz'}]|
-|[{name:'Liz'},{name:'Becky'}],'name'|[{name:'Becky'},{name:'Liz'}]|
-|[{id: 143, name:'Becky'},{id: 123, name:'Liz'}],'id'|[{id: 123, name:'Liz'},{id: 143, name:'Becky'}]|
+|[{name:'Liam'}],'name'|[{name:'Liam}]|
+|[{name:'Liam'},{name:'Becky'}],'name'|[{name:'Becky'},{name:'Liam'}]|
+|[{id: 143, name:'Becky'},{id: 123, name:'Liam'}],'id'|[{id: 123, name:'Liam'},{id: 143, name:'Becky'}]|
 |[],'name'|[]|
-|[{name:'Liz'}],'id'|'property name does not exist'|
+|[{name:'Liam'}],'id'|'property name does not exist'|
 
 ## Task 5
 
