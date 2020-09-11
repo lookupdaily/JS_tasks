@@ -1,6 +1,13 @@
 var sortByObjectProperty = require('../src/sortByObjectProperty');
 
 describe('sortByObjectProperty', () => {
+  it('shows error message if property does not exist', () => {
+    var input = [{ name: 'Liam' }];
+    expect(sortByObjectProperty(input, 'id')).toEqual(
+      'property name does not exist'
+    );
+  });
+
   it('returns the same for an array of one object', () => {
     var input = [{ name: 'Liam' }];
     expect(sortByObjectProperty(input, 'name')).toEqual(input);
@@ -14,20 +21,39 @@ describe('sortByObjectProperty', () => {
 
   it('sorts an array of object swith more than one property', () => {
     var input = [
-      { id: 143, name: 'Becky' },
-      { id: 123, name: 'Liam' },
+      {
+        title: 'The Road Ahead',
+        author: 'Bill Gates',
+        libraryID: 1254,
+      },
+      {
+        title: 'Walter Isaacson',
+        author: 'Steve Jobs',
+        libraryID: 4264,
+      },
+      {
+        title: 'Mockingjay: The Final Book of The Hunger Games',
+        author: 'Suzanne Collins',
+        libraryID: 3245,
+      },
     ];
     var expected = [
-      { id: 123, name: 'Liam' },
-      { id: 143, name: 'Becky' },
+      {
+        title: 'Mockingjay: The Final Book of The Hunger Games',
+        author: 'Suzanne Collins',
+        libraryID: 3245,
+      },
+      {
+        title: 'The Road Ahead',
+        author: 'Bill Gates',
+        libraryID: 1254,
+      },
+      {
+        title: 'Walter Isaacson',
+        author: 'Steve Jobs',
+        libraryID: 4264,
+      },
     ];
-    expect(sortByObjectProperty(input, 'id')).toEqual(expected);
-  });
-
-  it('shows error message if property does not exist', () => {
-    var input = [{ name: 'Liam' }];
-    expect(sortByObjectProperty(input, 'id')).toEqual(
-      'property name does not exist'
-    );
+    expect(sortByObjectProperty(input, 'title')).toEqual(expected);
   });
 });
