@@ -40,6 +40,7 @@ To run the tests:
 Tests will run in the command line.
 
 
+
 ## Task 1
 
 Write a JavaScript function to  get the number of occurrences of each letter in specified string
@@ -64,6 +65,8 @@ countCharacter('test','t') // => 2
 |'a','b'|0|
 |'','a'|0|
 
+
+
 ## Task 2
 
 Write a JavaScript function that reverses a number
@@ -82,6 +85,8 @@ reverseNumber(32243) // => 34223
 |32243|34223|
 |'1234'| 'not a number'|
 
+
+
 ## Task 3 
 
 Write a JavaScript program to get the length of a JavaScript object
@@ -98,7 +103,9 @@ getObjectLength({}) // => 0
 |-------|--------|
 |{}|0|
 |{name:'Liam'}|1 |
-|{name : “test”,class : "VI",rollno : 12 }|3|
+|{name : “test”,class : "VI",rollno : 12 }|3|  
+
+
 
 ## Task 4 
 
@@ -118,7 +125,9 @@ sortByObjectProperty([{name:'Liam'},{name:'Becky'}],'name') // => [{name:'Becky'
 |[{name:'Liam'},{name:'Becky'}],'name'|[{name:'Becky'},{name:'Liam'}]|
 |[{id: 143, name:'Becky'},{id: 123, name:'Liam'}],'id'|[{id: 123, name:'Liam'},{id: 143, name:'Becky'}]|
 |[],'name'|[]|
-|[{name:'Liam'}],'id'|'property name does not exist'|
+|[{name:'Liam'}],'id'|'property name does not exist'|   
+
+
 
 ## Task 5
 
