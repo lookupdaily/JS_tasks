@@ -94,6 +94,13 @@ getAllProperties( {
    }) // => [title, author, libraryID]
 ```
 
+### Text Cases
+
+| Input | Output |
+|-------|--------|
+|{title:  'The Road Ahead'}|['title']|
+|Book = { library: 'Stockport', inStock: true};  book = Object.create(Book); book.title = 'The Road Ahead' | ['library','inStock','title']|
+|Test = {}; Test2 = Object.create({}) | [] |
 
 
 
