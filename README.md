@@ -3,6 +3,11 @@
 A series of exercises to test my understanding of vanilla JavaScript.   
 [Task 1](#Task-1) | [Task 2](#Task-2) | [Task 3](#Task-3) | [Task 4](#Task-4) | [Task 5](#Task-5)
 
+## Technologies
+
+- JavaScript (NodeJS)
+- Jest
+
 ## Getting started
 
 The solutions to the problems below are designed to be run in nodeJS and require [node to be installed](https://nodejs.org/en/download/) on your machine. 
@@ -23,7 +28,7 @@ Functions can also be loaded independently in the REPL by loading the respective
 
 ## Running tests
 
-Tests are written in jest, which is installed using yarn package manager, and require [yarn to be installed](https://classic.yarnpkg.com/en/docs/install/) locally.
+Tests are written in jest, and require [yarn to be installed](https://classic.yarnpkg.com/en/docs/install/) locally.
 
 To run the tests:
 
