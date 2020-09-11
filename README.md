@@ -1,5 +1,7 @@
 # JS Exercise - 1
 
+## Getting started
+
 ## Task 1
 
 Write a JavaScript function to  get the number of occurrences of each letter in specified string
@@ -101,8 +103,3 @@ getAllProperties( {
 |{title:  'The Road Ahead'}|['title']|
 |Book = { library: 'Stockport', inStock: true};  book = Object.create(Book); book.title = 'The Road Ahead' | ['library','inStock','title']|
 |Test = {}; Test2 = Object.create({}) | [] |
-
-
-
-
-
