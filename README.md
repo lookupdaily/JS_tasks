@@ -1,5 +1,8 @@
 # JS Exercise - 1
 
+A series of exercises to test my understanding of vanilla JavaScript.   
+[Task 1](#Task-1) | [Task 2](#Task-2) | [Task 3](#Task-3) | [Task 4](#Task-4) | [Task 5](#Task-5)
+
 ## Getting started
 
 The solutions to the problems below are designed to be run in nodeJS and require [node to be installed](https://nodejs.org/en/download/) on your machine. 
@@ -26,7 +29,7 @@ To run the tests:
 
 ```shell
 > yarn install
-> yarn jest
+> yarn test
 ```
 
 Tests will run in the command line.
@@ -132,4 +135,6 @@ getAllProperties( {
 |-------|--------|
 |{title:  'The Road Ahead'}|['title']|
 |Book = { library: 'Stockport', inStock: true};  book = Object.create(Book); book.title = 'The Road Ahead' | ['library','inStock','title']|
+|Book =  { library: 'Stockport', inStock: true};  book = Object.create(Book); book.title = 'The Road Ahead'; instanceOfBook = Object.create(book); instanceOfBook.id = 1254;|['library', 'inStock', 'title', 'id']|
 |Test = {}; Test2 = Object.create({}) | [] |
+|Parent = function() { this.object = true }; child = new Parent(); child.isChild = true;|['isObject','isChild']|
