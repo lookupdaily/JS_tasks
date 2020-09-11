@@ -31,5 +31,9 @@ describe('countCharacter', () => {
 
   it('should work for capital letters in string', () => {
     expect(countCharacter('Test', 't')).toEqual(2);
-  })
+  });
+
+  it('should work for capital letters in character', () => {
+    expect(countCharacter('test', 'T')).toEqual(2);
+  });
 });
