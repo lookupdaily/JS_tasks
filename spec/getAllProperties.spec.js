@@ -28,12 +28,6 @@ describe('getAllProperties', () => {
     );
   });
 
-  it('can handle empty objects', () => {
-    var Parent = {};
-    var child = Object.create(Parent);
-    expect(getAllProperties(child)).toEqual([]);
-  });
-
   it('works with constructors', () => {
     var Parent = function () {
       this.isObject = true;
@@ -44,5 +38,11 @@ describe('getAllProperties', () => {
     expect(getAllProperties(child).sort()).toEqual(
       ['isObject', 'isChild'].sort()
     );
+  });
+
+  it('can handle empty objects', () => {
+    var Parent = {};
+    var child = Object.create(Parent);
+    expect(getAllProperties(child)).toEqual([]);
   });
 });
