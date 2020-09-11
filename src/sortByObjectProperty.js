@@ -15,7 +15,7 @@ function sortByObjectProperty(array, property) {
   }
   return array;
 }
-// built in method of sorting
+// if using built in method of sorting
 // return array.sort((a,b) => {
 //     return a[property] > b[property] ? 1 : -1;
 // })
