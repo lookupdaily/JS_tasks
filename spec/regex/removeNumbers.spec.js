@@ -16,4 +16,8 @@ describe('remove numbers', () => {
   it('works with capital letters', () => {
     expect(removeNumbers('A1')).toEqual('A');
   });
+
+  it('returns an empty string if no matches', () => {
+    expect(removeNumbers('1')).toEqual('');
+  });
 });
