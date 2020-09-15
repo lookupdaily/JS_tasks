@@ -12,4 +12,8 @@ describe('find three letter word', () => {
   it('returns more than one three letter word', () => {
     expect(find3LetterWords('the quick brown fox')).toEqual('the fox');
   });
+
+  it('inores capital letters', () => {
+    expect(find3LetterWords('The')).toEqual('The');
+  })
 });
