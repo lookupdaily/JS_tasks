@@ -1,5 +1,7 @@
 function find3LetterWords(string) {
-  return string.match(/[a-z]{3}/).join(' ');
+  const regex = /\b[a-z]{3}\b/g;
+  const matchingWords = string.match(regex);
+  return matchingWords.join(' ');
 }
 
 module.exports = find3LetterWords;

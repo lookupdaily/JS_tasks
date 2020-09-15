@@ -8,4 +8,8 @@ describe('find three letter word', () => {
   it('returns only the three letter word in a two word string', () => {
     expect(find3LetterWords('the quick')).toEqual('the');
   });
+
+  it('returns more than one three letter word', () => {
+    expect(find3LetterWords('the quick brown fox')).toEqual('the fox');
+  });
 });
