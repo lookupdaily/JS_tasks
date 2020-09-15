@@ -10,18 +10,18 @@ describe('get monetary value', () => {
   });
 
   it('accepts monetary values with no decimals', () => {
-    expect(getMonetaryValue('$10')).toEqual(['$10'])
-  })
+    expect(getMonetaryValue('$10')).toEqual(['$10']);
+  });
 
-  it('does not return the \'.\' character if it is not followed by digits', () => {
-    expect(getMonetaryValue('$10.')).toEqual(['$10'])
-  })
+  it("does not return the '.' character if it is not followed by digits", () => {
+    expect(getMonetaryValue('$10.')).toEqual(['$10']);
+  });
 
   it('returns more than one value', () => {
     expect(getMonetaryValue('$9.99 $9.99')).toEqual(['$9.99', '$9.99']);
   });
 
   it('returns null if no match', () => {
-    expect(getMonetaryValue('')).toEqual(null)
-  })
+    expect(getMonetaryValue('')).toEqual(null);
+  });
 });
