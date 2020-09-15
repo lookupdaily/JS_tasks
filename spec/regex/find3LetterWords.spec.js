@@ -22,4 +22,9 @@ describe('find three letter word', () => {
       'No three letter word found in string'
     );
   });
+
+  it('passes supplied test case', () => {
+    const string = 'The quick brown fox jumped over the lazy dog';
+    expect(find3LetterWords(string)).toEqual('The fox the dog');
+  });
 });
