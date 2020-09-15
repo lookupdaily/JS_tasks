@@ -51,6 +51,7 @@ const ex3 = 'The salad costs $9.99';
 |'$9.99'|'$9.99'|
 |'price $9.99'|'$9.99'|
 |'The salad costs $9.99'|'$9.99'|
+|''|There is no monetary value'|
 
 
 ## Exercise 4
