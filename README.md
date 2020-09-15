@@ -39,8 +39,6 @@ To run the tests:
 
 Tests will run in the command line.
 
-
-
 ## Task 1
 
 Write a JavaScript function to  get the number of occurrences of each letter in specified string
