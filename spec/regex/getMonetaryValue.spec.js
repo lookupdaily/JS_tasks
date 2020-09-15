@@ -9,6 +9,10 @@ describe('get monetary value', () => {
     expect(getMonetaryValue('price $9.99')).toEqual(['$9.99']);
   });
 
+  it('accepts monetary values with no decimals', () => {
+    expect(getMonetaryValue('$10')).toEqual(['$10'])
+  })
+
   it('returns more than one value', () => {
     expect(getMonetaryValue('$9.99 $9.99')).toEqual(['$9.99', '$9.99']);
   });
