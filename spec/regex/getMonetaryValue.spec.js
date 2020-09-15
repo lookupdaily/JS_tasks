@@ -8,4 +8,8 @@ describe('get monetary value', () => {
   it('removes non monetary value from string', () => {
     expect(getMonetaryValue('price $9.99')).toEqual(['$9.99']);
   });
+
+  it('returns more than one value', () => {
+    expect(getMonetaryValue('$9.99 $9.99')).toEqual(['$9.99', '$9.99']);
+  });
 });
