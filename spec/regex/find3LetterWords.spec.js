@@ -15,9 +15,11 @@ describe('find three letter word', () => {
 
   it('ignores capital letters', () => {
     expect(find3LetterWords('The')).toEqual('The');
-  })
+  });
 
   it('displays a message if no matches', () => {
-    expect(find3LetterWords('quick')).toEqual('No three letter word found in string');
-  })
+    expect(find3LetterWords('quick')).toEqual(
+      'No three letter word found in string'
+    );
+  });
 });

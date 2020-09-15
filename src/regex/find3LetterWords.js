@@ -4,7 +4,7 @@ function find3LetterWords(string) {
   if (matchingWords) {
     return matchingWords.join(' ');
   } else {
-    return 'No three letter word found in string'
+    return 'No three letter word found in string';
   }
 }
 
