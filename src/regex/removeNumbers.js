@@ -1,12 +1,12 @@
 function removeNumbers(string) {
-  const regex = /[^0-9]/g
-  const noNumbers = string.match(regex) 
+  const regex = /[^0-9]/g;
+  const noNumbers = string.match(regex);
 
-  if(noNumbers) {
-    return noNumbers.join("");
+  if (noNumbers) {
+    return noNumbers.join('');
   } else {
-    return ''
+    return '';
   }
 }
 
-module.exports = removeNumbers
+module.exports = removeNumbers;
