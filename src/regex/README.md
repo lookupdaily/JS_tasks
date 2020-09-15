@@ -25,6 +25,9 @@ Using a regex pattern, remove all of the numbers from the ex2 string.
  ```javascript
  const ex2 = 'A1B2C3D4E5F6G7H8I9J10';
  ```
+
+ ### Test cases
+
 |Input|Output|
 |-----|------|
 |'a'  |'a'   |
@@ -40,6 +43,15 @@ Using a regex pattern, find the monetary value contained within the ex3 string.
 ```javascript
 const ex3 = 'The salad costs $9.99';
 ```
+
+### Test cases
+
+|Input|Output|
+|-----|------|
+|'$9.99'|'$9.99'|
+|'price $9.99'|'$9.99'|
+|'The salad costs $9.99'|'$9.99'|
+
 
 ## Exercise 4
 Using a regex pattern, find the telephone number contained within the ex4 string.
