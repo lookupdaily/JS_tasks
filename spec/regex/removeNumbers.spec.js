@@ -20,4 +20,10 @@ describe('remove numbers', () => {
   it('returns an empty string if no matches', () => {
     expect(removeNumbers('1')).toEqual('');
   });
+
+  it('works for supplied test case', () => {
+    const string = 'A1B2C3D4E5F6G7H8I9J10';
+    const expected = 'ABCDEFGHIJ'
+    expect(removeNumbers(string)).toEqual(expected);
+  })
 });
