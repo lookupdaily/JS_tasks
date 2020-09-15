@@ -7,5 +7,5 @@ describe('find three letter word', () => {
 
   it('returns only the three letter word in a two word string', () => {
     expect(find3LetterWords('the quick')).toEqual('the');
-  })
+  });
 });
