@@ -13,6 +13,10 @@ describe('get monetary value', () => {
     expect(getMonetaryValue('$10')).toEqual(['$10'])
   })
 
+  it('does not return the \'.\' character if it is not followed by digits', () => {
+    expect(getMonetaryValue('$10.')).toEqual(['$10'])
+  })
+
   it('returns more than one value', () => {
     expect(getMonetaryValue('$9.99 $9.99')).toEqual(['$9.99', '$9.99']);
   });
