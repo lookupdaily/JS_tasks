@@ -25,6 +25,14 @@ Using a regex pattern, remove all of the numbers from the ex2 string.
  ```javascript
  const ex2 = 'A1B2C3D4E5F6G7H8I9J10';
  ```
+|Input|Output|
+|-----|------|
+|'a'  |'a'   |
+|'a1' |'a'   |
+|'a12b'|'ab' |
+|'A1'  |'A'  |
+|'1'   |''   |
+|''    |''   |
 
 ## Exercise 3
 Using a regex pattern, find the monetary value contained within the ex3 string.
