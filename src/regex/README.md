@@ -51,7 +51,7 @@ const ex3 = 'The salad costs $9.99';
 |'$9.99'|'$9.99'|
 |'price $9.99'|'$9.99'|
 |'The salad costs $9.99'|'$9.99'|
-|''|There is no monetary value'|
+|''|null|
 
 
 ## Exercise 4
@@ -60,6 +60,14 @@ Using a regex pattern, find the telephone number contained within the ex4 string
 ```javascript
 const ex4 = 'Contact customer support on 0800 300 500';
 ```
+
+|Input|Output|
+|-----|------|
+|'0800 300 500'|['0800 300 500']|
+|'Contact customer support on 0800 300 500'|['0800 300 500']|
+|'0800 300 500 or 0800 300 500'|['0800 300 500','0800 300 500']
+|'Contact customer support'|null|
+
 
 ## Exercise 5
 Using a regex pattern, find the email address contained within the ex5 string.
