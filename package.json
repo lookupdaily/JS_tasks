@@ -13,6 +13,6 @@
   },
   "scripts": {
     "test": "jest",
-    "lint": "eslint **/**/*.js"
+    "lint": "eslint {src,spec}/**/*.js"
   }
 }
