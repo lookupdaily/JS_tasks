@@ -26,6 +26,16 @@ testNum(11) => {value: '11 is greater than 10'}
 ## Exercise 2
 
 Write two functions that use Promises that you can chain! The first function, makeAllCaps(), will take in an array of words and capitalise them, and then the second function, sortWords(), will sort the words in alphabetical order. If the array contains anything but strings, it should throw an error.
+
+### Test Cases
+
+|Inputs|Outputs|
+|------|-------|
+|['cat']|['Cat']|
+|['cat','dog']|['Cat','Dog']|
+|['dog','cat','Fox']|['Cat','Dog','Fox']|
+|[9, 'cat']|Error: Invalid input|
+|[false, 'cat']|Error: Invalid input|
  
 ## Exercise 3
 

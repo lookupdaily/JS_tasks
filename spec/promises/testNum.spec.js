@@ -31,7 +31,6 @@ describe('testNum', () => {
     });
   });
 
-
   it('returns an object', async () => {
     expect(typeof testNum(1)).toEqual('object');
   });
