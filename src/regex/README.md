@@ -28,7 +28,7 @@ To run the tests:
 
 ```shell
 > yarn install
-> yarn test
+> yarn test regex
 ```
 
 # Exercises
