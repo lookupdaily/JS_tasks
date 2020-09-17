@@ -61,6 +61,8 @@ Using a regex pattern, find the telephone number contained within the ex4 string
 const ex4 = 'Contact customer support on 0800 300 500';
 ```
 
+### Test cases
+
 |Input|Output|
 |-----|------|
 |'0800 300 500'|['0800 300 500']|
@@ -76,3 +78,18 @@ Using a regex pattern, find the email address contained within the ex5 string.
 ```javascript
 const ex5 = 'You can contact me on Twitter @codebubb or james@juniordevelopercentral.com';
 ```
+### Test cases
+
+|Input|Output|
+|-----|------|
+|'james@juniordevelopercentral.com'|['james@juniordevelopercentral.com']|
+|'You can contact on james@juniordevelopercentral.com'|['james@juniordevelopercentral.com']|
+|'You can contact me on Twitter @codebubb or james@juniordevelopercentral.com'|['james@juniordevelopercentral.com']|
+|'james@juniordevelopercentral.com or james@yahoo.com'|['james@juniordevelopercentral.com', 'james@yahoo.com']|
+|'james-marshall@developer.com'|['james-marshall@developer.com']|
+|'james.marshall@developer.com'|[''james.marshall@developer.com']|
+|'james@developer-central.com'|['james@developer-central.com']|
+|'james@developer.co.uk'|['james@developer.co.uk']|
+|'contact'|null|
+
+
