@@ -16,12 +16,18 @@ describe('capitalize', () => {
   });
 });
 
-  describe('sort', () => {
-    it('sorts an array', async () => {
-      await expect(sort(['Dog', 'Cat'])).resolves.toEqual(['Cat','Dog']);
-    })
+describe('sort', () => {
+  it('sorts an array', async () => {
+    await expect(sort(['Dog', 'Cat'])).resolves.toEqual(['Cat', 'Dog']);
+  });
 
-  it('can be chained with sort function', async () => {
+  it('sort errors if array contains values which are not strings', async () => {
+    await expect(sort([false, 'cat'])).rejects.toEqual('Invalid input');
+  });
+});
+
+describe('chained promises', () => {
+  it('functions can be chained', async () => {
     await capitalize(['dog', 'cat', 'Fox'])
       .then((result) => {
         return sort(result);
@@ -39,9 +45,5 @@ describe('capitalize', () => {
       .catch((error) => {
         expect(error).toEqual('Invalid input');
       });
-  });
-
-  it('sort errors if array contains values which are not strings', async () => {
-    await expect(sort([false, 'cat'])).rejects.toEqual('Invalid input');
   });
 });
