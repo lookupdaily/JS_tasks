@@ -83,7 +83,6 @@ const ex5 = 'You can contact me on Twitter @codebubb or james@juniordevelopercen
 |Input|Output|
 |-----|------|
 |'james@juniordevelopercentral.com'|['james@juniordevelopercentral.com']|
-|'You can contact on james@juniordevelopercentral.com'|['james@juniordevelopercentral.com']|
 |'You can contact me on Twitter @codebubb or james@juniordevelopercentral.com'|['james@juniordevelopercentral.com']|
 |'james@juniordevelopercentral.com or james@yahoo.com'|['james@juniordevelopercentral.com', 'james@yahoo.com']|
 |'james-marshall@developer.com'|['james-marshall@developer.com']|
