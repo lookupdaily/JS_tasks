@@ -1,6 +1,7 @@
 const testNum = (number) => {
   return new Promise((resolve) => {
-    resolve('1 is less than 10');
+    if(number < 10) resolve(`${number} is less than 10`);
+    if(number > 10) resolve(`${number} is greater than 10`)
   });
 };
 
