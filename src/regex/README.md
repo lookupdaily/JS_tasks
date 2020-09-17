@@ -1,5 +1,40 @@
 # Regex exercises
 
+A series of exercises to test my understanding of regex.   
+
+
+
+## Getting started
+
+Run [src/regex/solutions.js](solutions.js) in node to see the solutions to each of the exercises below or load the file in the node REPL to try them out.
+
+```shell
+node src/regex/solutions.js
+```
+
+or 
+
+```shell
+node
+.load src/regex/solutions.js # access to all functions
+.load src/regex/getEmail.js # access to individual getEmail function
+```
+
+## Running tests
+
+Tests are written in jest, and require [yarn to be installed](https://classic.yarnpkg.com/en/docs/install/) locally.
+
+To run the tests:
+
+```shell
+> yarn install
+> yarn test
+```
+
+# Exercises
+
+Find descriptions and test cases for each of the exercises below:
+
 [Exercise 1](#exercise-1) | [Exercise 2](#exercise-2) | [Exercise 3](#exercise-3) | [Exercise 4](#exercise-4) | [Exercise 5](#exercise-5) 
 
 ## Exercise 1
