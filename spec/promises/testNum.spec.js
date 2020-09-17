@@ -19,6 +19,19 @@ describe('testNum', () => {
     });
   });
 
+  it('returns "{num} is less than 10 for negative number"', async () => {
+    await testNum(-1).then((result) => {
+      expect(result).toEqual('-1 is less than 10');
+    });
+  });
+
+  it('returns "{num} is less than 10 for zero"', async () => {
+    await testNum(0).then((result) => {
+      expect(result).toEqual('0 is less than 10');
+    });
+  });
+
+
   it('returns an object', async () => {
     expect(typeof testNum(1)).toEqual('object');
   });
