@@ -14,4 +14,10 @@ describe('getEmail', () => {
       )
     ).toEqual(['james@juniordevelopercentral.com']);
   });
+
+  it('returns multiple emails', () => {
+    expect(
+      getEmail('james@juniordevelopercentral.com or james@yahoo.com')
+    ).toEqual(['james@juniordevelopercentral.com', 'james@yahoo.com']);
+  });
 });
