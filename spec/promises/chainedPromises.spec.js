@@ -24,4 +24,18 @@ describe('capitalize', () => {
         expect(result).toEqual(['Cat', 'Dog', 'Fox']);
       });
   });
+
+  it('chained functions error if array contains values which are not strings', async () => {
+    await capitalize([9, 'cat'])
+      .then((result) => {
+        return sort(result);
+      })
+      .catch((error) => {
+        expect(error).toEqual('Invalid input');
+      });
+  });
+
+  it('sort errors if array contains values which are not strings', async () => {
+    await expect(sort([9, 'cat'])).rejects.toEqual('Invalid input');
+  });
 });
