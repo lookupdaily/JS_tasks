@@ -17,4 +17,12 @@ describe('getTelephoneNumber', () => {
       '0800 300 501',
     ]);
   });
+
+  it('returns null if no match', () => {
+    expect(getTelephoneNumber('Contact customer support')).toEqual(null);
+  });
+
+  it('spaces are not required', () => {
+    expect(getTelephoneNumber('0800300500')).toEqual(['0800300500']);
+  });
 });
