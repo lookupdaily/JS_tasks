@@ -10,4 +10,11 @@ describe('getTelephoneNumber', () => {
       getTelephoneNumber('Contact customer support on 0800 300 500')
     ).toEqual(['0800 300 500']);
   });
+
+  it('returns multiple telephone numbers', () => {
+    expect(getTelephoneNumber('0800 300 500 or 0800 300 501')).toEqual([
+      '0800 300 500',
+      '0800 300 501',
+    ]);
+  });
 });
