@@ -14,6 +14,12 @@ describe('capitalize', () => {
       expect(result).toEqual(['Cat', 'Dog']);
     });
   });
+});
+
+  describe('sort', () => {
+    it('sorts an array', async () => {
+      await expect(sort(['Dog', 'Cat'])).resolves.toEqual(['Cat','Dog']);
+    })
 
   it('can be chained with sort function', async () => {
     await capitalize(['dog', 'cat', 'Fox'])
@@ -36,6 +42,6 @@ describe('capitalize', () => {
   });
 
   it('sort errors if array contains values which are not strings', async () => {
-    await expect(sort([9, 'cat'])).rejects.toEqual('Invalid input');
+    await expect(sort([false, 'cat'])).rejects.toEqual('Invalid input');
   });
 });
