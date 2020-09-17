@@ -1,7 +1,8 @@
 # JS Exercise - 1
 
 A series of exercises to test my understanding of vanilla JavaScript.   
-[Task 1](#Task-1) | [Task 2](#Task-2) | [Task 3](#Task-3) | [Task 4](#Task-4) | [Task 5](#Task-5)
+[Task 1](#Task-1) | [Task 2](#Task-2) | [Task 3](#Task-3) | [Task 4](#Task-4) | [Task 5](#Task-5)   
+[Regex Exercises](src/regex/README.md)
 
 ## Technologies
 
