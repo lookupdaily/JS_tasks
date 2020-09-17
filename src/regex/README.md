@@ -67,6 +67,7 @@ const ex4 = 'Contact customer support on 0800 300 500';
 |'Contact customer support on 0800 300 500'|['0800 300 500']|
 |'0800 300 500 or 0800 300 500'|['0800 300 500','0800 300 500']
 |'Contact customer support'|null|
+|'0800300500'| ['0800 300 500']|
 
 
 ## Exercise 5
