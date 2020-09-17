@@ -17,10 +17,8 @@ describe('find three letter word', () => {
     expect(find3LetterWords('The')).toEqual(['The']);
   });
 
-  it('displays a message if no matches', () => {
-    expect(find3LetterWords('quick')).toEqual(
-      'No three letter word found in string'
-    );
+  it('returns null if no matches', () => {
+    expect(find3LetterWords('quick')).toEqual(null);
   });
 
   it('passes supplied test case', () => {
