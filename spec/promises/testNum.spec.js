@@ -13,6 +13,12 @@ describe('testNum', () => {
     });
   });
 
+  it('returns "{num}" is 10 when passed 10', async () => {
+    await testNum(10).then((result) => {
+      expect(result).toEqual('10 is 10');
+    });
+  });
+
   it('returns an object', async () => {
     expect(typeof testNum(1)).toEqual('object');
   });
