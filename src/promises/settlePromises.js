@@ -8,4 +8,8 @@ const checkStatuses = async (...args) => {
   });
 };
 
-module.exports = { settleAll, checkStatuses };
+const getAllResolvedValues = async (...args) => {
+  return Promise.all(args);
+};
+
+module.exports = { settleAll, checkStatuses, getAllResolvedValues };

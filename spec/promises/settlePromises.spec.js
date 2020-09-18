@@ -1,6 +1,7 @@
 const promiseFunctions = require('../../src/promises/settlePromises');
 const settleAll = promiseFunctions.settleAll;
 const checkStatuses = promiseFunctions.checkStatuses;
+const getAllResolvedValues = promiseFunctions.getAllResolvedValues;
 
 describe('settleAll', () => {
   let delay, checkGreaterThan10;
@@ -43,5 +44,31 @@ describe('settleAll', () => {
     await expect(
       checkStatuses(delay(2000), checkGreaterThan10(1))
     ).resolves.toEqual(['fulfilled', 'rejected']);
+  });
+});
+
+describe('promise.all', () => {
+  let checkGreaterThan10;
+
+  beforeEach(() => {
+    checkGreaterThan10 = (num) => {
+      return new Promise((resolve, reject) => {
+        num > 10
+          ? resolve('value is greater than 10')
+          : reject('value must be greater than 10');
+      });
+    };
+  });
+
+  it('returns an array of values', async () => {
+    await expect(
+      getAllResolvedValues(checkGreaterThan10(11))
+    ).resolves.toEqual(['value is greater than 10']);
+  });
+
+  it('does not resolve if passed any rejected promises', async () => {
+    await expect(
+      getAllResolvedValues(checkGreaterThan10(11), checkGreaterThan10(1))
+    ).rejects.toEqual('value must be greater than 10');
   });
 });
