@@ -4,11 +4,13 @@ A series of exercises to explore use cases for Promises in JavaScript
 
 ## Getting started
 
-Run individual files in the node REPL to gain access to the functions
+Run individual files in 'src/promises' directory the node REPL to gain access to the functions
 
 ```shell
 node
-.load src/promises/chainedPromises.js # functions which can be chained
+.load src/promises/testNum.js # exercise 1
+.load src/promises/chainedPromises.js # exercise 2
+.load src/promises/settlePromises.js # exercise 3
 ```
 
 ## Running tests

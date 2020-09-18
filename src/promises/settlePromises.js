@@ -3,7 +3,7 @@ const settleAll = async (...args) => {
   return Promise.allSettled(args).then((values) => values);
 };
 
-// Function which uses Promise.allSettled to return the statuses 
+// Function which uses Promise.allSettled to return the statuses
 // of a list of promises
 const checkStatuses = async (...args) => {
   return Promise.allSettled(args).then((values) => {
