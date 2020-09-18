@@ -4,8 +4,8 @@ const settleAll = async (...args) => {
 
 const checkStatuses = async (...args) => {
   return Promise.allSettled(args).then((values) => {
-    return values.map(value => value.status);
-  })
-}
+    return values.map((value) => value.status);
+  });
+};
 
-module.exports = {settleAll, checkStatuses};
+module.exports = { settleAll, checkStatuses };
