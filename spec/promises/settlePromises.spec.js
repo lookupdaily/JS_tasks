@@ -1,18 +1,6 @@
 const settleAll = require('../../src/promises/settlePromises');
 
 describe('settleAll', () => {
-  it('returns one settled promise', async () => {
-    const delay = (ms) => {
-      return new Promise((resolve) => {
-        setTimeout(resolve, ms);
-      });
-    };
-
-    await expect(settleAll(delay(3000))).resolves.toEqual([
-      { status: 'fulfilled', value: undefined },
-    ]);
-  });
-
   it('returns an array of multiple settled promises', async () => {
     const delay = (ms) => {
       return new Promise((resolve) => {
@@ -21,17 +9,18 @@ describe('settleAll', () => {
     };
 
     const checkGreaterThan10 = (num) => {
-      return new Promise((resolve,reject) => {
-        num > 10 ? resolve('greater than 10') : reject('must be greater than 10');
+      return new Promise((resolve, reject) => {
+        num > 10
+          ? resolve('greater than 10')
+          : reject('must be greater than 10');
       });
     };
 
-    await expect(settleAll(
-      delay(3000),
-      checkGreaterThan10(11)
-    )).resolves.toEqual([
+    await expect(
+      settleAll(delay(3000), checkGreaterThan10(11))
+    ).resolves.toEqual([
       { status: 'fulfilled', value: undefined },
       { status: 'fulfilled', value: 'greater than 10' },
     ]);
-  })
+  });
 });
