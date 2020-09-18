@@ -1,5 +1,27 @@
 # Promise Exercises
 
+A series of exercises to explore use cases for Promises in JavaScript
+
+## Getting started
+
+Run individual files in the node REPL to gain access to the functions
+
+```shell
+node
+.load src/promises/chainedPromises.js # functions which can be chained
+```
+
+## Running tests
+
+Tests are written in jest, and require [yarn to be installed](https://classic.yarnpkg.com/en/docs/install/) locally.
+
+To run the tests:
+
+```shell
+> yarn install
+> yarn test promises
+```
+
 # Exercises
 
 Find descriptions and test cases for each of the exercises below:
@@ -40,3 +62,13 @@ Write two functions that use Promises that you can chain! The first function, ma
 ## Exercise 3
 
 Write examples to use all, allSettled methods in Promise with examples 
+
+Use cases:
+- Check the status of a series of promises
+- Get the values of all resolved promises
+- Only act when all promises are resolved
+
+Example functions to pass:
+- delay
+- equality check
+- fetching data
